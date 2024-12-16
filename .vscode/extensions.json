@@ -1,5 +1,7 @@
 {
     "recommendations": [
-        "syler.sass-indented"
+        "syler.sass-indented",
+        "dbaeumer.vscode-eslint",
+        "dsznajder.es7-react-js-snippets"
     ],
 }
