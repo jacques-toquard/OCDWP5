@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styles from './GreyedImage.module.sass';
 
-const GreyedImage = ({ src, alt }) => {
+const GrayedImage = ({ src, alt }) => {
     return (
         <>
             <div className={styles.overlay}></div>
@@ -10,9 +10,9 @@ const GreyedImage = ({ src, alt }) => {
     );
 };
 
-GreyedImage.propTypes = {
+GrayedImage.propTypes = {
     src: PropTypes.string,
     alt: PropTypes.string,
 };
 
-export default GreyedImage;
+export default GrayedImage;
