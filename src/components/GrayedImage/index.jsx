@@ -3,10 +3,10 @@ import styles from './GreyedImage.module.sass';
 
 const GrayedImage = ({ src, alt }) => {
     return (
-        <>
+        <div className={styles.gray}>
             <div className={styles.overlay}></div>
-            <img className={styles.greyed} src={src} alt={alt} />
-        </>
+            <img className={styles.grayed} src={src} alt={alt} />
+        </div>
     );
 };
 
