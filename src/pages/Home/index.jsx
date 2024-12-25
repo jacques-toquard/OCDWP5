@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import styles from "./Home.module.sass";
 import logements from "../../assets/logements.json";
 import GrayedImage from "../../components/GrayedImage";
@@ -12,10 +13,12 @@ const Home = () => {
       </div>
       <div className={styles.grid}>
         {logements.map((logement) => (
-          <article key={logement.id} className={styles.card}>
-            <img src={logement.cover} alt={logement.title} />
-            <h2>{logement.title}</h2>
-          </article>
+          <Link to={`/logement/${logement.id}`} key={logement.id}>
+            <article className={styles.card}>
+              <img src={logement.cover} alt={logement.title} />
+              <h2>{logement.title}</h2>
+            </article>
+          </Link>
         ))}
       </div>
     </div>
