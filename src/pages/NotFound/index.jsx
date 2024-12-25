@@ -1,5 +1,5 @@
-import { Link } from 'react-router'
-import styles from './NotFound.module.sass'
+import { Link } from "react-router";
+import styles from "./NotFound.module.sass";
 
 const NotFound = () => {
   return (
@@ -8,7 +8,7 @@ const NotFound = () => {
       <p>Oups! La page que vous demandez n&apos;existe pas.</p>
       <Link to="/">Retourner sur la page d&apos;accueil</Link>
     </div>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;
