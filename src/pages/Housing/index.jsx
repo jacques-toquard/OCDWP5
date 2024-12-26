@@ -16,10 +16,19 @@ const Housing = () => {
         <img src={logement.cover} alt={logement.title} />
         {/* todo: add right arrow and left arrow buttons  */}
       </div>
-      <div className={styles.description}>
-        <h1>{logement.title}</h1>
-        <h2>{logement.location}</h2>
-        {/* todo: add host info and ratings  */}
+      <div className={styles.info}>
+        <div className={styles.top}>
+          <div className={styles.titles}>
+            <h1>{logement.title}</h1>
+            <h2>{logement.location}</h2>
+          </div>
+          <div className={styles.host}>
+            <h3>{logement.host.name}</h3>
+            <div>
+              <img src={logement.host.picture} alt={logement.host.name} />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
