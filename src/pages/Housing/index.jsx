@@ -29,6 +29,18 @@ const Housing = () => {
             </div>
           </div>
         </div>
+        <div className={styles.middle}>
+          <div className={styles.tags}>tags</div>
+          <div className={styles.rating}>rating</div>
+        </div>
+        <div className={styles.bottom}>
+          <div className={styles.description}>
+            <h3>Description</h3>
+          </div>
+          <div className={styles.equipments}>
+            <h3>Equipements</h3>
+          </div>
+        </div>
       </div>
     </div>
   );
