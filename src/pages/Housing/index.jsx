@@ -2,6 +2,7 @@ import { useParams, Navigate } from 'react-router';
 import styles from './Housing.module.sass';
 import logements from '../../assets/logements.json';
 import Rating from '../../components/Rating';
+import Collapsible from '../../components/Collapsible';
 
 const Housing = () => {
   const { id } = useParams();
@@ -41,12 +42,14 @@ const Housing = () => {
           <Rating rating={logement.rating} />
         </div>
         <div className={styles.bottom}>
-          <div className={styles.description}>
-            <h3>Description</h3>
-          </div>
-          <div className={styles.equipments}>
-            <h3>Equipements</h3>
-          </div>
+          <Collapsible title="Description">{logement.description}</Collapsible>
+          <Collapsible title="Equipements">
+            <ul>
+              {logement.equipments.map(equipment => (
+                <li key={equipment}>{equipment}</li>
+              ))}
+            </ul>
+          </Collapsible>
         </div>
       </div>
     </div>
