@@ -1,6 +1,7 @@
 import { useParams, Navigate } from "react-router";
 import styles from "./Housing.module.sass";
 import logements from "../../assets/logements.json";
+import Rating from "../../components/Rating";
 
 const Housing = () => {
   const { id } = useParams();
@@ -32,10 +33,14 @@ const Housing = () => {
         <div className={styles.middle}>
           <div className={styles.tags}>
             {logement.tags.map((tag) => (
-              <div key={tag} title={tag}>{tag}</div>
+              <div key={tag} title={tag}>
+                {tag}
+              </div>
             ))}
           </div>
-          <div className={styles.rating}>rating</div>
+          <div className={styles.rating}>
+            <Rating rating={logement.rating} />
+          </div>
         </div>
         <div className={styles.bottom}>
           <div className={styles.description}>
