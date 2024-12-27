@@ -38,9 +38,7 @@ const Housing = () => {
               </div>
             ))}
           </div>
-          <div className={styles.rating}>
-            <Rating rating={logement.rating} />
-          </div>
+          <Rating rating={logement.rating} />
         </div>
         <div className={styles.bottom}>
           <div className={styles.description}>
