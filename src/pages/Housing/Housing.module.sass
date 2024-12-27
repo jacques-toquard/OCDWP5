@@ -56,6 +56,22 @@
     justify-content: space-between
     align-items: center
 
+    .tags
+      display: flex
+      flex-wrap: wrap
+      gap: 10px
+
+      div
+        background-color: #FF6060
+        color: white
+        padding: 5px 10px
+        border-radius: 10px
+        width: 100px // todo: adjust dynamically with media query
+        text-align: center
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+
   .bottom
     display: flex
     justify-content: space-between

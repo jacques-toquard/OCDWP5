@@ -30,7 +30,11 @@ const Housing = () => {
           </div>
         </div>
         <div className={styles.middle}>
-          <div className={styles.tags}>tags</div>
+          <div className={styles.tags}>
+            {logement.tags.map((tag) => (
+              <div key={tag} title={tag}>{tag}</div>
+            ))}
+          </div>
           <div className={styles.rating}>rating</div>
         </div>
         <div className={styles.bottom}>
