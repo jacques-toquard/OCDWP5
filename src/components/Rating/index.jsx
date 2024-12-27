@@ -6,7 +6,7 @@ const Rating = ({ rating }) => {
   return (
     <div className={styles.rating}>
       {Array.from({ length: rating }).map((_, index) => (
-        <Star key={index} color="#FF6060" />
+        <Star key={index} color="var(--primary-color)" />
       ))}
       {Array.from({ length: 5 - rating }).map((_, index) => (
         <Star key={index} color="#E3E3E3" />
