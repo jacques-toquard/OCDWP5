@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router';
+import { Routes, Route, Navigate } from 'react-router';
 import App from './App';
 
 import Home from './pages/Home';
@@ -13,7 +13,8 @@ const Router = () => {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="logement/:id" element={<Housing />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="404" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/404" replace />} />
       </Route>
     </Routes>
   );
