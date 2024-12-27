@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
-import Star from "../Star";
-import styles from "./Rating.module.sass";
+import PropTypes from 'prop-types';
+import Star from '../Star';
+import styles from './Rating.module.sass';
 
 const Rating = ({ rating }) => {
   return (

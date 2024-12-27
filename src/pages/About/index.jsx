@@ -1,7 +1,7 @@
-import styles from "./About.module.sass";
-import GrayedImage from "../../components/GrayedImage";
-import paysage from "../../assets/paysage.png";
-import Collapsible from "../../components/Collapsible";
+import styles from './About.module.sass';
+import GrayedImage from '../../components/GrayedImage';
+import paysage from '../../assets/paysage.png';
+import Collapsible from '../../components/Collapsible';
 
 const About = () => {
   return (

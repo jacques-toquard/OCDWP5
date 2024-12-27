@@ -1,6 +1,6 @@
-import { useState } from "react";
-import PropTypes from "prop-types";
-import styles from "./Collapsible.module.sass";
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+import styles from './Collapsible.module.sass';
 
 const Collapsible = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +8,7 @@ const Collapsible = ({ title, children }) => {
   return (
     <div className={styles.collapsible}>
       <button
-        className={`${styles.header} ${isOpen ? styles.open : ""}`}
+        className={`${styles.header} ${isOpen ? styles.open : ''}`}
         onClick={() => setIsOpen(!isOpen)}
       >
         <h2>{title}</h2>

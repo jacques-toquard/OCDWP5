@@ -1,10 +1,10 @@
-import { Routes, Route } from "react-router";
-import App from "./App";
+import { Routes, Route } from 'react-router';
+import App from './App';
 
-import Home from "./pages/Home";
-import Housing from "./pages/Housing";
-import NotFound from "./pages/NotFound";
-import About from "./pages/About";
+import Home from './pages/Home';
+import Housing from './pages/Housing';
+import NotFound from './pages/NotFound';
+import About from './pages/About';
 
 const Router = () => {
   return (

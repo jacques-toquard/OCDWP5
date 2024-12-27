@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import styles from "./GreyedImage.module.sass";
+import PropTypes from 'prop-types';
+import styles from './GreyedImage.module.sass';
 
 const GrayedImage = ({ src, alt }) => {
   return (

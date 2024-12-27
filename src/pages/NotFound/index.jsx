@@ -1,5 +1,5 @@
-import { Link } from "react-router";
-import styles from "./NotFound.module.sass";
+import { Link } from 'react-router';
+import styles from './NotFound.module.sass';
 
 const NotFound = () => {
   return (

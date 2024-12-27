@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-const Logo = ({ color = "var(--primary-color)", ...props }) => {
+const Logo = ({ color = 'var(--primary-color)', ...props }) => {
   return (
     <svg
       width="211"

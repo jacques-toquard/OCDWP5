@@ -1,5 +1,5 @@
-import styles from "./Footer.module.sass";
-import Logo from "../Logo";
+import styles from './Footer.module.sass';
+import Logo from '../Logo';
 
 const Footer = () => {
   return (

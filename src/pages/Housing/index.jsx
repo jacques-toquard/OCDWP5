@@ -1,11 +1,11 @@
-import { useParams, Navigate } from "react-router";
-import styles from "./Housing.module.sass";
-import logements from "../../assets/logements.json";
-import Rating from "../../components/Rating";
+import { useParams, Navigate } from 'react-router';
+import styles from './Housing.module.sass';
+import logements from '../../assets/logements.json';
+import Rating from '../../components/Rating';
 
 const Housing = () => {
   const { id } = useParams();
-  const logement = logements.find((log) => log.id === id);
+  const logement = logements.find(log => log.id === id);
 
   if (!logement) {
     return <Navigate to="/404" replace />;
@@ -32,7 +32,7 @@ const Housing = () => {
         </div>
         <div className={styles.middle}>
           <div className={styles.tags}>
-            {logement.tags.map((tag) => (
+            {logement.tags.map(tag => (
               <div key={tag} title={tag}>
                 {tag}
               </div>
