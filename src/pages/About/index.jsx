@@ -6,7 +6,7 @@ import Collapsible from '../../components/Collapsible';
 const About = () => {
   return (
     <div className={styles.about}>
-      <GrayedImage src={paysage} alt="Paysage" />
+      <GrayedImage src={paysage} alt="Paysage" height="10rem" />
       <div className={styles.collapsibles}>
         <Collapsible title="Fiabilité">
           Les annonces postées sur Kasa garantissent une fiabilité totale, Les

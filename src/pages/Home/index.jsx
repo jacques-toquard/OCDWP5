@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <div className={styles.falaise}>
-        <GrayedImage src={falaise} alt="Falaise" />
+        <GrayedImage src={falaise} alt="Falaise" height="6rem" />
         <h1>Chez vous, partout et ailleurs</h1>
       </div>
       <div className={styles.grid}>
