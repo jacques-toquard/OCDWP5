@@ -14,10 +14,12 @@ const Collapsible = ({ title, children }) => {
         <h2>{title}</h2>
         <span className={styles.arrow}>&#x2303;</span>
       </button>
-      {isOpen && <div className={styles.content}>{children}</div>}
+      <div className={`${styles.content} ${isOpen ? styles.visible : ''}`}>
+        <p>{children}</p>
+      </div>
     </div>
   );
-};
+}
 
 Collapsible.propTypes = {
   title: PropTypes.string.isRequired,
