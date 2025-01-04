@@ -38,8 +38,7 @@ const Housing = () => {
               aria-label="Previous image"
             >
               <svg
-                width="48"
-                height="80"
+                className={styles.arrowIcon}
                 viewBox="0 0 48 80"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,8 +55,7 @@ const Housing = () => {
               aria-label="Next image"
             >
               <svg
-                width="48"
-                height="80"
+                className={styles.arrowIcon}
                 viewBox="0 0 48 80"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
